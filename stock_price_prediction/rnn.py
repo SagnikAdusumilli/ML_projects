@@ -80,6 +80,7 @@ rnn_regressor.add(LSTM(units = 50))
 rnn_regressor.add(Dropout(0.2))
 
 #adding output layer
+# we don't add activation fuction, since its a regressor
 rnn_regressor.add(Dense(units = 1))
 
 #compiling the rnn
